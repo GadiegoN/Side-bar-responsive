@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo_content">
@@ -20,9 +22,11 @@
         <ul class="nav_list">
             <li>
                 <i class='bx bx-search'></i>
-                <input type="text" name="Search" id="search" placeholder="Search...">
+                <input type="text" name="Search" id="search" placeholder="Search..." onkeyup="shearchTitle()">
                 <span class="tooltip">Search</span>
             </li>
+        </ul>
+        <ul class="nav_list" id="nav_ul">
             <li>
                 <a href="#">
                     <i class='bx bx-grid-alt'></i>
@@ -98,4 +102,5 @@
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
